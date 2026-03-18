@@ -13,9 +13,9 @@ app.use(cors({
         "http://localhost:3001"], // for local development]
 }))
 
-// app.get("/", (req, res) => {
-//     res.send("hello world")
-// })
+app.get("/", (req, res) => {
+    res.send("hello from to do app backend")
+})
 
 // todo app operations
 
