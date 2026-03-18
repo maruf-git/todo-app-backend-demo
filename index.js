@@ -10,7 +10,9 @@ const PORT = 3000;
 app.use(express.json())
 app.use(cors({
     origin: ["http://localhost:3000",
-        "http://localhost:3001"], // for local development]
+        "http://localhost:3001",
+        "https://todo-app-frontend-demo-psi.vercel.app"
+    ], // for local development]
 }))
 
 app.get("/", (req, res) => {
